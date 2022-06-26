@@ -4,43 +4,208 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300&display=swap" rel="stylesheet">
-    <title>Personal Porftolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9252a955e0.js" crossorigin="anonymous"></script>
+    <title>Nixon Lopez</title>
 </head>
 <body>
-    <header class="cabecera__container">
-         <img src="./asset/GeoCal.png" alt="logo">
-         <nav class="navegacion__container">
-            <ul>
-                <li>Inicio</li>
-                <li>Sobre mi</li>
-                <li>Portafolio</li>
-                <li>Contacto</li>
-            </ul>
-         </nav>
+
+   <!--Cabecera--> 
+    <header>
+        <div class="container__logo">
+            <img src="./assets/logonix.png" alt="logo de nixon">
+        </div>
+
+        <button class="toogle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <nav class="container__menu">
+                <a href="">Inicio</a>
+                <a href="">Sobre mí</a>
+                <a href="">Portafolio</a>
+                <a class="contacto_nixon contacto_active" href="">Contacto</a>
+                
+        </nav>
     </header>
+    <!--Cabecera--> 
 
     <main>
-        <section>
-            <div>
-                <h2>Hello World</h2>
-                <img src="#" alt="">
+
+        <!--Sección de bienvenida--> 
+        <section class="section__principal">
+            <div class="container__imagenprincipal">
+                <img src="./assets/nixtech.png" alt="imagen de nixon">
             </div>
-            <div>
-                <h1>Bienvenidos al mundo maravilloso de la programación</h1>
+
+            <div class="container__textoprincipal">
+                <h1>HELLO WORLD, BIENVENIDOS A MI PORTAFOLIO</h1>
                 <hr>
-                <h3>Soy Nixon López - Desarrollador Web Fronted</h3>
+                <p>Soy Nixon Lopez, desarrollador web Fronted</p>
+                <button class="button__contactame">Contáctame aquí</button>
             </div>
         </section>
- 
+        <!--Sección de bienvenida--> 
+
+        <!--Sección sobre mi--> 
+        <section class="section__sobremi">
+            <div class="container__imagen_sobremi">
+                <img src="./assets/me.svg" alt="Nixon">
+            </div>
+            <div class="container__texto_sobremi">
+                <h2>Un poco sobre mí</h2>
+                <p>Me encanta la tecnología y la educación. Por eso, constamente estoy aplicando 
+                    todo lo que voy aprendiendo para crear sitios web impresionantes.</p>
+                <button class="button__contactame">Contáctamen aquí</button>
+            </div>
+        </section>
+        <!--Sección sobre mi--> 
+
+        <!--Sección de imagenes de lenguajes--> 
+        <section class="section__lenguajes">
+            <div class="lenguaje_widget">
+                <img src="./assets/icon/1.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="lenguaje_widget">
+                <img src="./assets/icon/2.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="lenguaje_widget">
+                <img src="./assets/icon/3.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="lenguaje_widget">
+                <img src="./assets/icon/4.png" alt="Git">
+                <p>Git</p>
+            </div>
+            <div class="lenguaje_widget">
+                <img src="./assets/icon/5.png" alt="React">
+                <p>React</p>
+            </div>
+            <div class="lenguaje_widget">
+                <img src="./assets/icon/6.png" alt="Python">
+                <p>Python</p>
+            </div>
+        </section>
+         <!--Sección de imagenes de lenguajes--> 
+
+        <!--Sección de portafolio--> 
+        <section class="section__portafolio">
+            <h2>Mi portafolio personal</h2>
+            <div class="container__portafolio_personal">
+                <div class="portafolio__personal1">
+                    <img src="#" alt="Projecto1">
+                    <h4>Clon de Google</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates debitis minima quis sed deleniti dolore quaerat quisquam, velit, ullam recusandae 
+                        numquam magni obcaecati ex dignissimos maxime officia expedita ratione.</p>
+                    <div>
+                        <button>Ver en Github</button>
+                        <button>Ver online</button>
+                    </div>  
+                </div>
+
+                <div class="portafolio__personal2">
+                    <img src="#" alt="Projecto2">
+                    <h4>Batatabit</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates debitis minima quis sed deleniti dolore quaerat quisquam, velit, ullam recusandae 
+                        numquam magni obcaecati ex dignissimos maxime officia expedita ratione.</p>
+                    <div>
+                        <button>Ver en Github</button>
+                        <button>Ver online</button>
+                    </div>  
+                </div>
+
+                <div class="portafolio__personal3">
+                    <img src="#" alt="Projecto3">
+                    <h4>GeoCal</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates debitis minima quis sed deleniti dolore quaerat quisquam, velit, ullam recusandae 
+                        numquam magni obcaecati ex dignissimos maxime officia expedita ratione.</p>
+                    <div>
+                        <button>Ver en Github</button>
+                        <button>Ver online</button>
+                    </div>  
+                </div>
+
+                <div class="portafolio__personal4">
+                    <img src="#" alt="Projecto4">
+                    <h4>Ecommerce Style</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates debitis minima quis sed deleniti dolore quaerat quisquam, velit, ullam recusandae 
+                        numquam magni obcaecati ex dignissimos maxime officia expedita ratione.</p>
+                    <div>
+                        <button>Ver en Github</button>
+                        <button>Ver online</button>
+                    </div>  
+                </div>
+            </div>
+       
+        </section>
+         <!--Sección de portafolio--> 
+
+        <!--Sección de contacto--> 
+        <section class="section__contacto">
+            <div class="contacto__formulario">
+                <form action="">
+                    <h2>Escríbeme aquí</h2>
+                    <hr>
+                    <label for="">Escribe tu nombre
+                        <input type="text" name="nombre">
+                    </label>
+                    <label for="">Escribe tu email
+                        <input type="email" name="email">
+                    </label>
+                    <button class="button__enviar">ENVIAR MENSAJE</button>
+                </form>
+            </div>
+
+            <div class="container__imagen_contacto">
+                <img src="./assets/message.svg" alt="Contacto">
+            </div>
+        </section>
+        <!--Sección de contacto--> 
+
     </main>
 
-    <footer>
+<!--Sección de pie de pagina--> 
+<footer>
+    <div class="container__widget">
+          <div class="widget1">
+            <h3>Texto</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
 
-    </footer>
-    <script src="index.js"></script>
+          <div class="widget2">
+            <h3>Navegación</h3>
+            <a href="">Inicio</a>
+            <a href="">Sobre mi</a>
+            <a href="">Portafolio</a>
+            <a href="">Contacto</a>
+          </div>
+
+          <div class="widget3">
+            <h3>Próximos proyectos</h3>
+            <a href="#">Arukay</a>
+            <a href="#">Calculadora</a>
+            <a href="#">Weather App</a>
+          </div>
+
+          <div class="widget4">
+            <h3>Redes sociales</h3>
+            <a href="">Instagram</a>
+            <a href="">Facebook</a>
+            <a href="">Twitter</a>
+            <a href="">LinkdIn</a>
+          </div>
+    </div>
+    <div class="container__copyright">
+        <p>Copyright</p>
+    </div>
+</footer>
+<!--Sección de pie de pagina--> 
+
+    <script src="./index.js"></script>
 </body>
 </html>

@@ -5,17 +5,128 @@
 }
 
 html{
+    font: 62.5%;
+}
+
+body{
     font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
 }
 
 header{
+    background-color: white;
     width: 100%;
-    height: 100px;
+    height: 80px;
+    border-bottom: #d9d9d9 2px solid;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-img{
-    width: auto;
-    height: auto;
-    text-align: center;
+.container__logo img{
+    width: 150px;
+    align-items: center;
+}
 
+.toogle{
+    background: none;
+    font-size: 30px;
+    color: #7a007e;
+    align-items: center;
+    display: none;
+}
+
+.container__menu a{
+    max-width: 1000px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-right: 10px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.container__menu a:hover, .contacto_active{
+    color: #7a007e;
+    transition: .5s;
+}
+
+@media (max-width: 768px){
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+    }
+    
+    header{
+        height: 60px;     
+    }
+    
+    .container__menu{
+        display: flex;
+        flex-direction: column;
+        background-color: #d9d9d9;
+        margin-right: 0;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+
+    }
+
+    .container__logo img{
+        width: 100px;
+    }
+    
+    .container__menu a{
+        padding-bottom: 10px;
+    }
+    
+    .container__menu a:hover, .contacto_active{
+        background: none;
+        color: #7a007e;
+        transition: .5s;
+    }
+
+    .toogle{
+        font-size: 50px ;
+        display: block;
+    }
+
+}
+
+
+.container__imagenprincipal img{
+    width: 300px;
+    height: 300px;
+}
+
+.container__imagen_sobremi img{
+    width: 300px;
+    height: 300px;
+}
+
+.lenguaje_widget{
+    width: 50px;
+    height: 50px;
+}
+
+.container__imagen_contacto img{
+    width: 300px;
+    height: 300px;
 }
