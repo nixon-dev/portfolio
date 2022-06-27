@@ -19,6 +19,7 @@ a{
     color: black;
 }
 
+/*Inicio de cabecera*/
 header{
     background-color: white;
     width: 100%;
@@ -40,10 +41,25 @@ header{
 
 .toogle{
     background: none;
-    font-size: 30px;
+    border: none;
+    font-size: 25px;
     color: #7a007e;
     align-items: center;
     display: none;
+    cursor: pointer;
+}
+
+.container__menu .menu__socialmedia{
+    font-size: 25px;
+    margin: 0 auto;
+    cursor: pointer;
+    padding-top: 10px;
+    display: none;
+}
+
+.menu__socialmedia i:hover{
+    color: #7a007e;
+    transition: .5s;
 }
 
 .container__menu a{
@@ -56,18 +72,24 @@ header{
     width: max-content;
 }
 
-.container__menu a:hover, .contacto_active{
+.container__menu a:hover{
     color: #7a007e;
     transition: .5s;
 }
 
-@media (max-width: 768px){
-    a{
-        text-decoration: none;
-        cursor: pointer;
-        color: black;
-    }
+.container__menu .click_active{
+    background-color: #d9d9d9;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+}
+
+/*Fin de cabecera*/
+
+/*Inicio de Media querys*/
+
+@media (max-width: 576px){
     
+    /*Inicio de Mediaquerys de cabecera*/
     header{
         height: 60px;     
     }
@@ -82,11 +104,11 @@ header{
         top: 60px;
         width: 100%;
         padding: 20px;
-
         height: calc(100% - 60px);
         overflow-y: auto;
 
-
+        left: 100%;
+        transition: left 0.3s;
     }
 
     .container__logo img{
@@ -104,17 +126,153 @@ header{
     }
 
     .toogle{
-        font-size: 50px ;
         display: block;
     }
 
+    .menu__visible{
+        left: 0;
+
+    }
+
+    .container__menu .click_active{
+        padding: 0;
+        padding-bottom: 10px;
+        color: #7a007e;
+    }
+
+    .container__menu .menu__socialmedia{
+        display: block;
+    }
+    /*Fin de Mediaquerys de cabecera*/
+
+    /*Inicio de contenido principal*/
+
+.section__principal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__imagenprincipal img{
+    max-width: 100%;
+    width: 500px;
+    padding-bottom: 10px;
+}
+
+.container__imagenprincipal .container__textoprincipal{
+    width: 100%;
+}
+
+.container__textoprincipal h1{
+    font-size: 2.1rem;
+    color: #280029;
+    font-weight: bold;
+    line-height: 2.7rem;
+}
+
+.container__textoprincipal p{
+   font-size: 1rem;
+   color: #280029;
+   font-weight: bold;
+}
+
+.container__textoprincipal .button__contactame{
+    background-color: #280029;
+    color: white;
+    font-size: 1rem;
+    margin-top: 15px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.container__textoprincipal .button__contactame:hover{
+    background-color: #7a007e;
+    transition: 0.5s;
+}
+
+
+/*Fin de contenido principal*/
+
+}
+
+/*Fin de Media querys*/
+
+
+/*Inicio de contenido principal*/
+
+.section__principal{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    padding: 20px;
+    padding-top: 140px;
+    padding-bottom: 40px;
+}
+
+.section__principal .container__imagenprincipal{
+    width: 50%;
+}
+
+.section__principal .container__textoprincipal{
+    width: 50%;   
+    padding-top: 80px;
 }
 
 
 .container__imagenprincipal img{
-    width: 300px;
-    height: 300px;
+    max-width: 100%;
+    width: 400px;
+    padding-bottom: 20px;
+    display: block;
+    margin: 0 auto;
 }
+
+.container__textoprincipal h1{
+    font-size: 2.7rem;
+    color: #280029;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+hr{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 2px solid #7a007e;
+}
+
+.container__textoprincipal p{
+   font-size: 1.3rem;
+   color: #280029;
+   font-weight: bold;
+}
+
+.container__textoprincipal .button__contactame{
+    background-color: #280029;
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    width: 250px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.container__textoprincipal .button__contactame:hover{
+    background-color: #7a007e;
+    transition: 0.5s;
+}
+
+
+/*Fin de contenido principal*/
 
 .container__imagen_sobremi img{
     width: 300px;
@@ -130,3 +288,29 @@ header{
     width: 300px;
     height: 300px;
 }
+
+
+/*Fin deSection de lenguajes*/
+
+.section__lenguajes{
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+}
+
+.section__lenguajes .lenguaje_widget{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    
+}
+
+.lenguaje_widget i{
+    color: #280029;
+    font-size: 2rem;
+}
+
+/*Fin de Section de lenguajes*/
